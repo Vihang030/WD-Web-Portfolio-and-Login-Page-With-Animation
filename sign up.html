@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	
+	<link rel="shorcut icon" href="Images/icon.png">
+	<style>
+		body{
+			 margin: 0 auto;
+			 background-image: url("Images/aircraft.png");
+			 background-repeat: no-repeat;
+			 background-size: 100% 1080px;
+		}
+		.container{
+			width: 450px;
+			height: 620px;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.5);
+			margin: 0 auto;
+			margin-top: 200px;
+			margin-bottom: 200px;
+			border-radius: 5px;
+		}
+		.container img{
+			width: 120px;
+			height: 120px;
+			margin-top: -50px;
+			margin-bottom: 20px;
+		}
+		input[type="text"], input[type="password"]{
+			height: 30px;
+			width: 300px;
+			font-size: 15px;
+			margin-bottom: 50px;
+			background-color: white;
+			border-radius: 5px;
+		}
+		.btn{
+			padding: 15px 30px;
+			color: white;
+			font-size: 15px;
+			border-radius: 5px;
+			border: none;
+			background-color: #2ECC71;
+		}
+		ul{
+			width: 600px;
+			list-style: none;
+			font-family: arial;
+			font-size: 15px;
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		ul li{
+			width: 100px;
+			display: inline-block;
+			margin-left: 3px;
+			margin-right: 3px;
+			padding: 10px 0 10px 0;
+			text-align: center;
+		}
+		ul li:hover{
+			cursor: pointer;
+		}
+		#underLine{
+			height: 2px;
+			width: 100px;
+			margin-left: 223px;
+			background-color: black;
+			transition: all .3s linear;
+		}
+	</style>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<ul>
+		<li>Job Search</li>
+		<li>Sign In</li>
+		<li>Pic</li>
+		<li>Register</li>
+		<li>About Us</li>
+		<div id="underLine"></div>
+	</ul>
+	<div class="container">
+		<img src="Images/icon.png">
+		<form>
+			<div class="form-input">
+				<input type="text" name="firstName" placeholder=" Enter First Name">
+			</div>
+			<div class="form-input">
+				<input type="text" name="password" placeholder=" Enter Last Name">
+			</div>
+			<div class="form-input">
+				<input type="text" name="Email" placeholder=" Enter Your Email">
+			</div>
+			<div class="form-input">
+				<input type="password" name="password" placeholder=" Enter password">
+			</div>
+			<div class="form-input">
+				<input type="password" name="confirmPassword" placeholder=" Confirm password">
+			</div>
+			<input class="btn" type="submit" name="submit" value="Sign Up">
+		</form>
+	</div>
+</body>
+</html>
